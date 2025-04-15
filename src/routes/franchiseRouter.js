@@ -11,7 +11,7 @@ franchiseRouter.endpoints = [
     path: '/api/franchise',
     description: 'List all the franchises',
     example: `curl localhost:3000/api/franchise`,
-    response: [{ id: 1, name: 'pizzaPocket', admins: [{ id: 4, name: 'pizza franchisee', email: 'f@jwt.com' }], stores: [{ id: 1, name: 'SLC', totalRevenue: 0 }] }],
+    response: [{ id: 1, name: 'pizzaPocket', stores: [{ id: 1, name: 'SLC', totalRevenue: 0 }] }],
   },
   {
     method: 'GET',
