@@ -34,7 +34,6 @@ beforeAll(async () => {
 test('get franchise', async () => {
   const res = await request(app).get('/api/franchise');
   expect(res.status).toBe(200);
-  console.log(res.body);
   expect(res.body).toContainEqual(
     expect.objectContaining({
       id: franchiseID,
